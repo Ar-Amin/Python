@@ -4,7 +4,7 @@ import optparse
 
 # Get options for program for interface and the new mac address
 # change the mac address
-# check mac address with nwe mac address
+# check MAC address with new MAC address
 
 
 def get_options():
