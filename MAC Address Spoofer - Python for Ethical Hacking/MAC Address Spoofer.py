@@ -31,7 +31,7 @@ def mac_spoof(interface, mac_add):
 
 
 def mac_check(interface):
-    # checking ifconfig interface for validity (like lo interface etc...)
+    # checking ifconfig interface for validity (like lo interface etc.....)
     ifconfig = subprocess.check_output(["ifconfig", options.interface])
     current_mac = re.search(r"\w\w:\w\w:\w\w:\w\w:\w\w:\w\w", str(ifconfig))
     if current_mac.group(0):
