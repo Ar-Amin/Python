@@ -37,18 +37,18 @@ def mac_check(interface):
     if current_mac.group(0):
         return current_mac.group(0)
     else:
-        print("[-] Error reading MAC address.")
+        print("[-] Error Reading MAC Address.")
 
 
 options = get_options()
 
-print("[+] " + options.interface+"MAC address :" +
+print("[+] " + options.interface+"MAC Address :" +
       str(mac_check(options.interface)))
 
 mac.spoof(options.interface, options.new_mac)
 
 if mac_check(options.interface) == options.new_mac:
     print("[+] " + options.interface +
-          "MAC address has been spoofed Successfully!!!")
+          "MAC Address has been spoofed Successfully!!!")
 else:
-    print("[-] " + options.interface + "MAC address Spoofing has FAILED!!!")
+    print("[-] " + options.interface + "MAC Address Spoofing has FAILED!!!!")
