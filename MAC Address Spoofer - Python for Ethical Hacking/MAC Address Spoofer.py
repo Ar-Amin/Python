@@ -2,6 +2,7 @@ import subprocess
 import re
 import optparse
 
+
 # Get options for program for interface and the new mac address
 # change the mac address
 # check mac address with new mac address
@@ -49,6 +50,6 @@ mac.spoof(options.interface, options.new_mac)
 
 if mac_check(options.interface) == options.new_mac:
     print("[+] " + options.interface +
-          "MAC Address has been spoofed Successfully!!!")
+          "MAC Address has been spoofed Successfully!!!!")
 else:
     print("[-] " + options.interface + "MAC Address Spoofing has FAILED!!!!")
