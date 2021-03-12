@@ -3,7 +3,7 @@ import re
 import optparse
 
 # Get Options For Program For Interface And The New MAC Address
-# change the mac address
+# Change the MAC Address
 # check mac address with new mac address
 
 
