@@ -49,6 +49,6 @@ mac.spoof(options.interface, options.new_mac)
 
 if mac_check(options.interface) == options.new_mac:
     print("[+] " + options.interface +
-          "MAC Address has been spoofed Successfully!!!")
+          "MAC Address Has Been Spoofed Successfully!!!")
 else:
-    print("[-] " + options.interface + "MAC Address Spoofing has FAILED!!!!")
+    print("[-] " + options.interface + "MAC Address Spoofing Has FAILED!!!!")
