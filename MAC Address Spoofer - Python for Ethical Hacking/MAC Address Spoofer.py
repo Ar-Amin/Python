@@ -3,8 +3,8 @@ import re
 import optparse
 
 # Get Options For Program For Interface And The New MAC Address
-# Change the MAC Address
-# check MAC Address With New MAC Address
+# change the mac address
+# check mac address with new mac address
 
 
 def get_options():
@@ -31,7 +31,7 @@ def mac_spoof(interface, mac_add):
 
 
 def mac_check(interface):
-    # Checking ifconfig interface for validity (like to interface etc.......)
+    # checking ifconfig interface for validity (like lo interface etc.....)
     ifconfig = subprocess.check_output(["ifconfig", options.interface])
     current_mac = re.search(r"\w\w:\w\w:\w\w:\w\w:\w\w:\w\w", str(ifconfig))
     if current_mac.group(0):
@@ -49,6 +49,6 @@ mac.spoof(options.interface, options.new_mac)
 
 if mac_check(options.interface) == options.new_mac:
     print("[+] " + options.interface +
-          "MAC Address Has Been Spoofed Successfully!!!")
+          "MAC Address has been spoofed Successfully!!!")
 else:
-    print("[-] " + options.interface + "MAC Address Spoofing Has FAILED!!!!")
+    print("[-] " + options.interface + "MAC Address Spoofing has FAILED!!!!")
