@@ -3,8 +3,8 @@ import re
 import optparse
 
 # Get Options For Program For Interface And The New MAC Address
-# change the mac address
-# check mac address with new mac address
+# Change The MAC Address
+# Check MAC Address with new MAC Address
 
 
 def get_options():
