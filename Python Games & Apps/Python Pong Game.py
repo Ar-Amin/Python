@@ -38,7 +38,7 @@ ball.shapesize(stretch_wid=1, stretch_len=1)
 ball.penup()
 ball.goto(0, 0)
 ball.dx = .025
-ball.dy = -.025
+ball.dy = .025
 
 
 # functions
@@ -83,14 +83,24 @@ while True:
     wind.update()
 
     # move the ball
+    # ball stars at zero and evrytime loops run--->+.025 xaxis
     ball.setx(ball.xcor() + ball.dx)
+    # ball stars at zero and evrytime loops run--->+.025 yaxis
     ball.sety(ball.ycor() + ball.dy)
 
-    # border chek
-    if ball.ycor() > 280:
-        ball.sety(280)
-        ball.dy *= -1
+    # border chek , top border +300px, bottom border -300 bx , ball is 20px
+    if ball.ycor() > 280:  # if ball is at top borrder
+        ball.sety(280)  # set y coordinate +290
+        ball.dy *= -1  # reverse direction, making +.025 --> -.025
 
-    if ball.ycor() < -290:
+    if ball.ycor() < -290:  # if ball is at bottom border
         ball.sety(-290)
         ball.dy *= -1
+
+    if ball.xcor() > 390:  # if ball is at right border
+        ball.goto(0, 0)  # return ball to center
+        ball.dx *= -1  # reverse the x dirction
+
+    if ball.xcor() < -390:
+        ball.goto(0, 0)
+        ball.dx *= -1
