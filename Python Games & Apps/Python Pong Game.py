@@ -37,6 +37,9 @@ ball.color("green")
 ball.shapesize(stretch_wid=1, stretch_len=1)
 ball.penup()
 ball.goto(0, 0)
+ball.dx = .025
+ball.dy = -.025
+
 
 # functions
 
@@ -49,7 +52,7 @@ def madrab1_up():
 
 def madrab1_down():
     y = madrab1.ycor()
-    y -= 20
+    y -= 20  # set the y to decrease be 20
     madrab1.sety(y)
 
 
@@ -66,7 +69,8 @@ def madrab2_down():
 
 
 # keyboard bindins
-wind.listen()
+wind.listen()  # tell the windo to expect keboard inpot
+# when pressing w thw function madrab1_up is invoked
 wind.onkeypress(madrab1_up, "w")
 wind.onkeypress(madrab1_down, "s")
 
@@ -77,3 +81,16 @@ wind.onkeypress(madrab2_down, "Down")
 # main game loop
 while True:
     wind.update()
+
+    # move the ball
+    ball.setx(ball.xcor() + ball.dx)
+    ball.sety(ball.ycor() + ball.dy)
+
+    # border chek
+    if ball.ycor() > 280:
+        ball.sety(280)
+        ball.dy *= -1
+
+    if ball.ycor() < -290:
+        ball.sety(-290)
+        ball.dy *= -1
