@@ -42,11 +42,36 @@ ball.goto(0, 0)
 
 
 def madrab1_up():
+    y = madrab1.ycor()  # get the y coordinate of madra1
+    y += 20  # set the y to increase be 20
+    madrab1.sety(y)  # set the y of the madrab1 to the neew y coordinate
+
+
+def madrab1_down():
     y = madrab1.ycor()
-    y += 20
+    y -= 20
     madrab1.sety(y)
 
+
+def madrab2_up():
+    y = madrab2.ycor()
+    y += 20
+    madrab2.sety(y)
+
+
+def madrab2_down():
+    y = madrab2.ycor()
+    y -= 20
+    madrab2.sety(y)
+
+
 # keyboard bindins
+wind.listen()
+wind.onkeypress(madrab1_up, "w")
+wind.onkeypress(madrab1_down, "s")
+
+wind.onkeypress(madrab2_up, "Up")
+wind.onkeypress(madrab2_down, "Down")
 
 
 # main game loop
