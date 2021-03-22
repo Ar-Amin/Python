@@ -89,8 +89,8 @@ while True:
     ball.sety(ball.ycor() + ball.dy)
 
     # border chek , top border +300px, bottom border -300 bx , ball is 20px
-    if ball.ycor() > 280:  # if ball is at top borrder
-        ball.sety(280)  # set y coordinate +290
+    if ball.ycor() > 290:  # if ball is at top borrder
+        ball.sety(290)  # set y coordinate +290
         ball.dy *= -1  # reverse direction, making +.025 --> -.025
 
     if ball.ycor() < -290:  # if ball is at bottom border
