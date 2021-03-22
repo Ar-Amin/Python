@@ -40,6 +40,17 @@ ball.goto(0, 0)
 ball.dx = .025
 ball.dy = .025
 
+# score
+score1 = 0
+score2 = 0
+score = turtle.Turtle()
+score.speed(0)
+score.color("white")
+score.penup()
+score.hideturtle()
+score.goto(0, 260)
+score.write("Player 1: 0 Pylyer 2: 0", align="center",
+            font=("Courier", 14, "normal"))
 
 # functions
 
@@ -103,4 +114,13 @@ while True:
 
     if ball.xcor() < -390:
         ball.goto(0, 0)
+        ball.dx *= -1
+    # tasadom madrab and ball
+
+    if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < madrab2.ycor() + 40 and ball.ycor() > madrab2.ycor() - 40):
+        ball.setx(340)
+        ball.dx *= -1
+
+    if (ball.xcor() < -340 and ball.xcor() > - 350) and (ball.ycor() < madrab1.ycor() + 40 and ball.ycor() > madrab1.ycor() - 40):
+        ball.setx(-340)
         ball.dx *= -1
