@@ -49,7 +49,7 @@ score.color("white")
 score.penup()
 score.hideturtle()
 score.goto(0, 260)
-score.write("Player 1: 0 Pylyer 2: 0", align="center",
+score.write("Player 1:0  Pylyer 2:0", align="center",
             font=("Courier", 14, "normal"))
 
 # functions
@@ -111,10 +111,19 @@ while True:
     if ball.xcor() > 390:  # if ball is at right border
         ball.goto(0, 0)  # return ball to center
         ball.dx *= -1  # reverse the x dirction
+        score1 += 1
+        score.clear()
+        score.write("Player 1:{}  Pylyer 2:{}".format(score1, score2), align="center",
+                    font=("Courier", 14, "normal"))
 
     if ball.xcor() < -390:
         ball.goto(0, 0)
         ball.dx *= -1
+        score2 += 1
+        score.clear()
+        score.write("Player 1:{}  Pylyer 2:{}".format(score1, score2), align="center",
+                    font=("Courier", 14, "normal"))
+
     # tasadom madrab and ball
 
     if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < madrab2.ycor() + 40 and ball.ycor() > madrab2.ycor() - 40):
