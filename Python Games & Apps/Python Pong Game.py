@@ -28,7 +28,7 @@ madrab2.shapesize(stretch_wid=6, stretch_len=1)
 madrab2.penup()
 madrab2.goto(350, 0)
 
-# ball
+# Ball
 
 ball = turtle.Turtle()
 ball.speed(0)
@@ -40,7 +40,7 @@ ball.goto(0, 0)
 ball.dx = .025
 ball.dy = .025
 
-# score
+# Score
 score1 = 0
 score2 = 0
 score = turtle.Turtle()
@@ -52,7 +52,7 @@ score.goto(0, 260)
 score.write("Player 1:0  Pylyer 2:0", align="center",
             font=("Courier", 14, "normal"))
 
-# functions
+# Functions
 
 
 def madrab1_up():
@@ -124,7 +124,7 @@ while True:
         score.write("Player 1:{}  Pylyer 2:{}".format(score1, score2), align="center",
                     font=("Courier", 14, "normal"))
 
-    # tasadom madrab and ball
+    # Tasadom madrab and ball
 
     if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < madrab2.ycor() + 40 and ball.ycor() > madrab2.ycor() - 40):
         ball.setx(340)
