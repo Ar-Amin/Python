@@ -14,9 +14,9 @@ madrab1 = turtle.Turtle()  # intialize turtle object (shape)
 madrab1.speed(0)  # set the speed of the animation
 madrab1.shape("square")  # set the shape of the object
 madrab1.color("blue")  # set the color of the shhape
-# set the width and length of the shape
+# Set the width and length of the shape
 madrab1.shapesize(stretch_wid=6, stretch_len=1)
-madrab1.penup()  # stops the object from drawing lines
+madrab1.penup()  # Stops the object from drawing lines
 madrab1.goto(-350, 0)  # se the position of the object
 
 # madrab2
