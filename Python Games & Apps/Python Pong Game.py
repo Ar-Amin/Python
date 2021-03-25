@@ -37,8 +37,8 @@ ball.color("green")
 ball.shapesize(stretch_wid=1, stretch_len=1)
 ball.penup()
 ball.goto(0, 0)
-ball.dx = .025
-ball.dy = .025
+ball.dx = .0250
+ball.dy = .0250
 
 # Score
 score1 = 0
