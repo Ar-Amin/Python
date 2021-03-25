@@ -57,13 +57,13 @@ score.write("Player 1:0  Pylyer 2:0", align="center",
 
 def madrab1_up():
     y = madrab1.ycor()  # get the y coordinate of madra1
-    y += 20  # set the y to increase be 20
+    y += 20  # Set the y to increase be 20
     madrab1.sety(y)  # set the y of the madrab1 to the neew y coordinate
 
 
 def madrab1_down():
     y = madrab1.ycor()
-    y -= 20  # set the y to decrease be 20
+    y -= 20  # Set the y to decrease be 20
     madrab1.sety(y)
 
 
