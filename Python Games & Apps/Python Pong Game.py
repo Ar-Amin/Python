@@ -2,9 +2,9 @@
 # So do that command sudo apt-get install python3-tk
 import turtle
 
-wind = turtle.Screen()  # intialize screen
-wind.title("Ping    Pong")  # set the title of the windo
-wind.bgcolor("black")  # set the background color of the window
+wind = turtle.Screen()  # Intialize Screen
+wind.title("Ping    Pong")  # Set the title of the windo
+wind.bgcolor("black")  # Set the background color of the window
 wind.setup(width=800, height=600)  # set the width and height of the windo
 wind.tracer(0)  # stop the window from updating automatically
 
