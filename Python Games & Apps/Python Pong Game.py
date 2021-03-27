@@ -6,12 +6,12 @@ wind = turtle.Screen()  # Intialize Screen
 wind.title("Ping    Pong")  # Set the title of the windo
 wind.bgcolor("black")  # Set the background color of the window
 wind.setup(width=800, height=600)  # set the width and height of the windo
-wind.tracer(0)  # stop the window from updating automatically
+wind.tracer(0)  # Stop the window from updating automatically
 
 
 # madrab1
 madrab1 = turtle.Turtle()  # intialize turtle object (shape)
-madrab1.speed(0)  # set the speed of the animation
+madrab1.speed(0)  # Set the speed of the animation
 madrab1.shape("square")  # set the shape of the object
 madrab1.color("blue")  # set the color of the shhape
 # Set the width and length of the shape
