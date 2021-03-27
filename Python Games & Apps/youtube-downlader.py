@@ -5,11 +5,11 @@ link = 'https://www.youtube.com/watch?v=GsDyOkB10KI'
 
 video = YouTube(link)
 
-# print(f"The video title is:\n {video.title} \n ---------------------")
+# print(f"The video title is:\n {video.title} \n ----------------------")
 # print(f"The video description is:\n{video.description} \n ----------------")
 # print(f"The video views are: {video.views} \n --------------------")
-# print(f"The video rating is: {video.rating} \n ------------------")
-# print(f"The video duration is: {video.length} \n-----------------")
+# print(f"The video rating is: {video.rating} \n -------------------")
+# print(f"The video duration is: {video.length} \n------------------")
 
 # print(video.streams)
 
@@ -36,7 +36,7 @@ video.register_on_complete_callback(finish())
 
 #  If you want download all the Play List
 
-# from pytube import Playlist
+# From pytube import Playlist
 
 # play_link = "https://www.youtube.com/watch?v=GsDyOkB10KI"
 # Playlist = Playlist(link)
