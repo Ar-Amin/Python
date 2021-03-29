@@ -56,7 +56,7 @@ score.write("Player 1:0  Pylyer 2:0", align="center",
 
 
 def madrab1_up():
-    y = madrab1.ycor()  # get the y coordinate of madra1
+    y = madrab1.ycor()  # Get the y coordinate of madra1
     y += 20  # Set the y to increase be 20
     madrab1.sety(y)  # set the y of the madrab1 to the neew y coordinate
 
@@ -89,7 +89,7 @@ wind.onkeypress(madrab2_up, "Up")
 wind.onkeypress(madrab2_down, "Down")
 
 
-# main game loop
+# Main game loop
 while True:
     wind.update()
 
