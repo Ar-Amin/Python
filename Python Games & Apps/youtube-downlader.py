@@ -5,18 +5,18 @@ link = 'https://www.youtube.com/watch?v=GsDyOkB10KI'
 
 video = YouTube(link)
 
-# print(f"The video title is:\n {video.title} \n ----------------------")
+# print(f"The video title is:\n {video.title} \n ---------------------------")
 # print(f"The video description is:\n{video.description} \n ----------------")
-# print(f"The video views are: {video.views} \n --------------------")
-# print(f"The video rating is: {video.rating} \n -------------------")
-# print(f"The video duration is: {video.length} \n------------------")
+# print(f"The video views are: {video.views} \n ----------------------------")
+# print(f"The video rating is: {video.rating} \n ---------------------------")
+# print(f"The video duration is: {video.length} \n--------------------------")
 
 # print(video.streams)
 
-# for stream in video.streams:
+# For stream in video.streams:
 #     print(stream)
 
-# for stream in video.streams.filter(progressive=True):
+# For stream in video.streams.filter(progressive=True):
 #     print(stream)
 #          or
 # print(video.streams.get_highest_resolution())
