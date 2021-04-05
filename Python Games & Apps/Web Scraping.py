@@ -17,9 +17,9 @@ result = requests.get(
 src = result.content
 print(src)
 
-# 4th step create soup object to parse content
+# 4th Step create soup object to parse content
 soup = BeautifulSoup(src, "lxml")
-# 5th step the elements containing info we need
+# 5th Step the elements containing info we need
 # -- job titles, jop skills, company names, location names
 
 job_titles = soup.find_all("h2", {"class": "css-m604qf"})
