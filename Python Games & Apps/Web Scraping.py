@@ -46,5 +46,5 @@ file_list = [job_title, comany_name, location_name, skills]
 exported = zip_longest(*file_list)
 with open("/home/neo/Documents/Python/CodzelaPython/test.csv", "w") as myFile:
     wr = csv.writer(myFile)
-    wr.writerow(["job title", "company name", "location", "skills"])
-    wr.writerows()
+    wr.writerow([" Job title", "Company name", "Location", "Skills"])
+    wr.writerows(exported)
