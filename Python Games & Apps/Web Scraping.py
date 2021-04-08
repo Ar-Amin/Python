@@ -12,6 +12,7 @@ job_title = []
 comany_name = []
 location_name = []
 skills = []
+links = []
 
 # 2nd step use requestes to fetch the url
 result = requests.get(
@@ -36,15 +37,20 @@ job_skills = soup.find_all("div", {"class": "css-y4udm8"})
 # 6th step loop over returned lists to extract needed info into other lists
 for i in range(len(job_titles)):
     job_title.append(job_titles[i].text)
+    links.append(job_titles[i].find("a").attrs["href"])
     comany_name.append(comany_names[i].text)
     location_name.append(location_names[i].text)
     skills.append(job_skills[i].text)
-
+for link in links:
+    result = requests.get(link)
+    src = result.content
+    soup = BeautifulSoup(src, "lxml")
+    salaries = soup.find_all("div", {"class": ""})
 
 #  7 th Step creat csv file and fill it with values
-file_list = [job_title, comany_name, location_name, skills]
+file_list = [job_title, comany_name, location_name, links, skills]
 exported = zip_longest(*file_list)
 with open("/home/neo/Documents/Python/CodzelaPython/test.csv", "w") as myFile:
     wr = csv.writer(myFile)
-    wr.writerow([" Job title", "Company name", "Location", "Skills"])
+    wr.writerow([" Job title", "Company name", "Location", "links", "Skills"])
     wr.writerows(exported)
