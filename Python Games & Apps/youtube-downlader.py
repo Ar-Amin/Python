@@ -1,6 +1,6 @@
 from pytube import YouTube
 
-link = 'https://www.youtube.com/watch?v=GsDyOkB10KI'
+link = ''
 #link =  input("Please enter the video url: ")
 
 video = YouTube(link)
@@ -24,14 +24,14 @@ video = YouTube(link)
 # print(video.streams.get_lowest_resolution())
 
 
-def finish():
-    print("dowenload done")
+# def finish():
+#     print("dowenload done")
 
 
-video.streams.get_lowest_resolution().download(
-    output_path="/home/neo/Downloads")
+# video.streams.get_lowest_resolution().download(
+#     output_path="/home/neo/Downloads")
 
-video.register_on_complete_callback(finish())
+# video.register_on_complete_callback(finish())
 
 
 #  If you want download all the Play List
