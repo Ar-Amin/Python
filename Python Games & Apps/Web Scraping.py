@@ -34,7 +34,7 @@ comany_names = soup.find_all("a", {"class": "css-17s97q8"})
 location_names = soup.find_all("span", {"class": "css-5wys0k"})
 job_skills = soup.find_all("div", {"class": "css-y4udm8"})
 
-# 6th tep loop over returned lists to extract needed info into other lists
+# 6th Step loop over returned lists to extract needed info into other lists
 for i in range(len(job_titles)):
     job_title.append(job_titles[i].text)
     links.append(job_titles[i].find("a").attrs["href"])
