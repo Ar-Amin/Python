@@ -14,7 +14,7 @@ location_name = []
 skills = []
 links = []
 
-# 2nd step use requestes to fetch the url
+# 2nd Step use requestes to fetch the url
 result = requests.get(
     "https://wuzzuf.net/search/jobs/?a=hpb%7Cspbg&q=network%20administration")
 
