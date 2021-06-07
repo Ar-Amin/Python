@@ -1,0 +1,64 @@
+192.168.1.0/24
+
+40 Devices
+30 Devices
+21 Devices
+20 Devices
+15 Devices
+12 Devices
+9  Devices
+5  Devices
+
+5 serials
+
+192.168.1.0/26 subnet 255.255.255.192 for 40 Devices Next Hop 64
+
+
+--------------
+192.168.1.64/27 subnet 255.255.255.224 for 30 Devices Next Hop 32
+
+---------------
+192.168.1.96/27 subnet 255.255.255.224 for 21 Devices Next Hop 32
+
+--------------
+192.168.1.128/27 subnet 255.255.255.224 for 20 Devices Next Hop 32
+
+----------------
+192.168.1.160/28 subnet 255.255.255.240 for 15 Devices Next Hop 16
+
+----------------
+192.168.1.176/28 subnet 255.255.255.240 for 12 Devices Next Hop 16
+
+------------------
+192.168.1.192/28 subnet 255.255.255.240 for 9 Devices Next Hop 16
+
+---------------
+192.168.1.208/29 subnet 255.255.255.248 for 5 Devices Next Hop 8
+
+--------------
+192.168.1.216/30 subnet 255.255.255.252 for Serial Next Hop 4
+
+-------------
+192.168.1.220/30 subnet 255.255.255.252 for Serial Next Hop 4
+
+--------------
+192.168.1.224/30 subnet 255.255.255.252 for Serial Next Hop 4
+
+---------------
+192.168.1.228/30 subnet 255.255.255.252 for Serial Next Hop 4
+
+--------------
+192.168.1.232/30 subnet 255.255.255.252 for Serial Next Hop 4
+
+--------------
+192.168.1.236/30 subnet 255.255.255.252 for Serial Next Hop 4
+
+---------------
+192.168.1.240/30 subnet 255.255.255.252 for Serial Next Hop 4
+
+--------------
+192.168.1.244/30 subnet 255.255.255.252 for Serial Next Hop 4
+
+--------------
+192.168.1.248/30
+
