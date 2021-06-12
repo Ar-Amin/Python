@@ -1,0 +1,41 @@
+NID:192.168.1.0/24
+VLSM
+
+
+37 Devices
+27 Devices
+17 Devices
+10 Devices
+7  Devices
+4 * 4 fo sereals
+
+
+192.168.1.0/26 subnet 255.255.255.192 For 37 Devices Next Hop 64
+
+
+---------------
+192.168.1.64/27 subnet 255.255.255.224 For 27 Devices Next Hop 32
+
+-------------
+192.168.1.96/27 subnet 255.255.255.224 For 17 Devices Next Hop 32
+
+------------
+192.168.1.128/28 subnet 255.255.255.240 For 10 Devices Next Hop 16
+
+-------------
+192.168.1.144/29 subnet 255.255.255.248 For 7 Devices Next Hop 8
+
+-------------
+192.168.1.152/30 subnet 255.255.255.252 For serial
+
+--------------
+192.168.1.156/30 subnet 255.255.255.252 For serial
+
+---------------
+192.168.1.160/30 subnet 255.255.255.252 For serial
+
+----------------
+192.168.1.164/30 subnet 255.255.255.252 For serial
+
+--------------
+192.168.1.168/30 

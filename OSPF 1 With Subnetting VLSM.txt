@@ -1,0 +1,52 @@
+172.16.16.0/16
+
+25 Devices
+14 Devices
+12 Devices
+10 Devices
+9  Devices
+5  Devices
+
+for serials
+5 * 4
+
+172.16.16.0/27 subnet 255.255.255.224 for 25 Devices Next Hop 32
+172.16.16.1
+
+------------
+172.16.16.32/28  subnet 255.255.255.240 for 14 Devices Next Hop 16
+172..16.16.33  
+
+
+------------
+172.16.16.48/28 subnet 255.255.255.240 for 12 Devices Next Hop 16
+172.16.16.49
+
+------------
+172.16.16.64/28 subnet 255.255.255.240 for 10 Devices Next Hop 16
+172.16.16.65
+
+--------------
+172.16.16.80/28 subnet 255.255.255.240 for 9 Devices Next Hop 16
+172.16.16.81
+
+--------------
+172.16.16.96/29 subnet 255.255.255.248 for 5 Devices Next Hop 8
+
+------------
+172.16.16.104/30 subnet 255.255.255.252 for serial Next Hop 4
+
+--------------
+172.16.16.108/30 subnet 255.255.255.252 for serial Next Hop 4
+
+-------------
+172.16.16.112/30 subnet 255.255.255.252 for serial Next Hop 4
+
+--------------
+172.16.16.116/30 subnet 255.255.255.252 for serial Next Hop 4
+
+--------------
+172.16.16.120/30 subnet 255.255.255.252 for serial Next Hop 4
+
+-------------
+172.16.16.124
